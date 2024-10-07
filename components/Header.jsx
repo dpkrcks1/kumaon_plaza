@@ -70,35 +70,41 @@ export default function Navbar() {
             onClick={toggleMenu}
             className="text-white focus:outline-none"
           >
-            <MenuIcon className="h-6 w-6 text-white" />
+            <MenuIcon className="h-6 w-6 text-customText" />
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden bg-gray-700 p-4">
-          <Link href="/" className="block text-white hover:text-gray-300">
+        <div className="lg:hidden bg-customBg p-4">
+          <Link
+            href="/"
+            className="block text-customText hover:text-customHover"
+          >
             Home
           </Link>
-          <Link href="/about" className="block text-white hover:text-gray-300">
+          <Link
+            href="/about"
+            className="block text-customText hover:text-customHover"
+          >
             About
           </Link>
           <Link
             href="/services"
-            className="block text-white hover:text-gray-300"
+            className="block text-customText hover:text-customHover"
           >
             Services
           </Link>
           <Link
             href="/portfolio"
-            className="block text-white hover:text-gray-300"
+            className="block text-customText hover:text-customHover"
           >
             Portfolio
           </Link>
           <Link
             href="/contact"
-            className="block text-white hover:text-gray-300"
+            className="block text-customText hover:text-customHover"
           >
             Contact
           </Link>

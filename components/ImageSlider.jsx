@@ -30,11 +30,11 @@ export default function ImageSlider() {
   };
 
   return (
-    <div className="relative h-20 sm:h-80 md:h-96 lg:h-[600px] w-full">
+    <div className="relative h-64 sm:h-80 md:h-96 lg:h-[600px] w-full">
       <AnimatePresence initial={false}>
         <motion.div
           key={currentIndex}
-          className="absolute inset-0"
+          className="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-50"
           initial="enter"
           animate="center"
           exit="exit"
@@ -47,6 +47,7 @@ export default function ImageSlider() {
             layout="fill"
             style={{ objectFit: "cover" }}
           />
+          <div className="absolute inset-0 bg-gradient-to-br from-black to-transparent opacity-50 z-10" />
         </motion.div>
       </AnimatePresence>
     </div>
