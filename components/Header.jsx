@@ -21,44 +21,47 @@ export default function Navbar() {
            */}
           <Link href="/">
             <span
-              className={`text-[#e9c46a] text-3xl ${customFonts.libre.className}`}
+              className={`text-[#e9c46a] text-3xl ${customFonts.work_sans.className}`}
             >
               Kumaon
             </span>
             <span
-              className={`text-[#f4a261] text-3xl ${customFonts.marker.className}`}
+              className={`text-[#f4a261] text-3xl ${customFonts.work_sans.className}`}
             >
-              Palaza
+              Plaza
             </span>
           </Link>
         </div>
 
         {/* Links for Large Screens */}
         <div className="hidden lg:flex space-x-6">
-          <Link href="/" className="text-customText hover:text-customHover">
+          <Link
+            href="/"
+            className={`text-customText hover:text-customHover ${customFonts.work_sans.className}`}
+          >
             Home
           </Link>
           <Link
             href="/about"
-            className="text-customText hover:text-customHover"
+            className={`text-customText hover:text-customHover ${customFonts.work_sans.className}`}
           >
             About
           </Link>
           <Link
             href="/services"
-            className="text-customText hover:text-customHover"
+            className={`text-customText hover:text-customHover ${customFonts.work_sans.className}`}
           >
             Services
           </Link>
           <Link
             href="/portfolio"
-            className="text-customText hover:text-customHover"
+            className={`text-customText hover:text-customHover ${customFonts.work_sans.className}`}
           >
             Portfolio
           </Link>
           <Link
             href="/contact"
-            className="text-customText hover:text-customHover"
+            className={`text-customText hover:text-customHover ${customFonts.work_sans.className}`}
           >
             Contact
           </Link>
