@@ -29,6 +29,7 @@ import {
 import content from "@/content/content";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
+import Link from "next/link";
 export default function Home() {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
@@ -38,6 +39,7 @@ export default function Home() {
   const [isInView3, setIsInView3] = useState(false);
 
   const checkInView = (ref, setInView) => {
+    if (!ref.current) return;
     const rect = ref.current.getBoundingClientRect();
     const inView = rect.top < window.innerHeight && rect.bottom >= 0;
     setInView(inView);
@@ -93,12 +95,14 @@ export default function Home() {
             only five centuries, but also the leap into electronic typesetting,
             remaining essentially unchanged.
           </p>
-          <Button
-            variant="outline"
-            className={`${customFonts.work_sans.className}`}
-          >
-            Discover <FaArrowRight className="ml-2" />{" "}
-          </Button>
+          <Link href="/about">
+            <Button
+              variant="outline"
+              className={`${customFonts.work_sans.className}`}
+            >
+              Discover <FaArrowRight className="ml-2" />{" "}
+            </Button>
+          </Link>
         </div>
       </div>
 

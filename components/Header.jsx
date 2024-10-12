@@ -37,31 +37,31 @@ export default function Navbar() {
         <div className="hidden lg:flex space-x-6">
           <Link
             href="/"
-            className={`text-customText hover:text-customHover ${customFonts.work_sans.className}`}
+            className={`text-customText text-lg hover:text-customHover ${customFonts.work_sans.className}`}
           >
             Home
           </Link>
           <Link
             href="/about"
-            className={`text-customText hover:text-customHover ${customFonts.work_sans.className}`}
+            className={`text-customText text-lg hover:text-customHover ${customFonts.work_sans.className}`}
           >
             About
           </Link>
           <Link
             href="/services"
-            className={`text-customText hover:text-customHover ${customFonts.work_sans.className}`}
+            className={`text-customText text-lg hover:text-customHover ${customFonts.work_sans.className}`}
           >
             Services
           </Link>
           <Link
             href="/portfolio"
-            className={`text-customText hover:text-customHover ${customFonts.work_sans.className}`}
+            className={`text-customText text-lg hover:text-customHover ${customFonts.work_sans.className}`}
           >
             Portfolio
           </Link>
           <Link
             href="/contact"
-            className={`text-customText hover:text-customHover ${customFonts.work_sans.className}`}
+            className={`text-customText text-lg hover:text-customHover ${customFonts.work_sans.className}`}
           >
             Contact
           </Link>
