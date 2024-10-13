@@ -3,6 +3,8 @@ import { MenuIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import { useState } from "react";
 import customFonts from "@/app/font";
+import { Button } from "./ui/button";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +15,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-customBg p-4">
+    <nav className="bg-customBg px-4 sticky z-50 top-0 shadow-md">
       <div className="container mx-auto flex items-center justify-between px-2 py-2 sm:px-8 sm:py-8">
         <div className="flex items-center">
           {/**
@@ -34,7 +36,7 @@ export default function Navbar() {
         </div>
 
         {/* Links for Large Screens */}
-        <div className="hidden lg:flex space-x-6">
+        <div className="hidden lg:flex space-x-6 items-center justify-center">
           <Link
             href="/"
             className={`text-customText text-lg hover:text-customHover ${customFonts.work_sans.className}`}
@@ -48,22 +50,28 @@ export default function Navbar() {
             About
           </Link>
           <Link
-            href="/services"
+            href="/gallery"
             className={`text-customText text-lg hover:text-customHover ${customFonts.work_sans.className}`}
           >
-            Services
+            Gallery
           </Link>
           <Link
             href="/portfolio"
             className={`text-customText text-lg hover:text-customHover ${customFonts.work_sans.className}`}
           >
-            Portfolio
+            Contact
           </Link>
           <Link
             href="/contact"
-            className={`text-customText text-lg hover:text-customHover ${customFonts.work_sans.className}`}
+            className={`text-xl font-bold hover:text-customHover ${customFonts.work_sans.className}`}
           >
-            Contact
+            <Button
+              variant="outline"
+              className="shadow-md font-semibold text-lg"
+            >
+              <span>Book Now</span>
+              <FaArrowRight className="ml-2 text-lg" />
+            </Button>
           </Link>
         </div>
 

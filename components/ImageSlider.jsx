@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import assets from "@/assets/assets";
+import assets from "@/public/assets/assets";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function ImageSlider() {
@@ -30,7 +30,7 @@ export default function ImageSlider() {
   };
 
   return (
-    <div className="relative h-64 sm:h-80 md:h-96 lg:h-[600px] w-full">
+    <div className="relative h-64 sm:h-80 md:h-96 lg:h-[600px] w-full py-4">
       <AnimatePresence initial={false}>
         <motion.div
           key={currentIndex}

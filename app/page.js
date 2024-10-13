@@ -17,7 +17,7 @@ import {
 import customFonts from "./font";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import assets from "@/assets/assets";
+import assets from "@/public/assets/assets";
 import Image from "next/image";
 import { HoverCard, HoverCardContent } from "@/components/ui/hover-card";
 import { HoverCardTrigger } from "@radix-ui/react-hover-card";
